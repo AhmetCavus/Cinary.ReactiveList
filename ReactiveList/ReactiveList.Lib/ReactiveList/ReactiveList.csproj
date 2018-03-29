@@ -4,12 +4,12 @@
     <TargetFrameworks>netstandard1.0;netstandard2.0;MonoAndroid80;Xamarin.iOS10;uap10.0.15063;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;</TargetFrameworks>
     <AssemblyName>Cinary.ReactiveList</AssemblyName>
     <RootNamespace>Cinary.ReactiveList</RootNamespace>
-    <PackageId>Plugin.FlexibleList</PackageId>
+    <PackageId>Cinary.ReactiveList</PackageId>
     
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
     <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
-    <Version>1.0.0.0</Version>
+    <Version>0.1.0</Version>
     <PackageVersion>1.0.0.0</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
@@ -21,20 +21,23 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     
     <!--TODO: Fill these in-->
-    <PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>LINK TO PROJECT</PackageProjectUrl>
-    <RepositoryUrl>LINK TO PROJECT</RepositoryUrl>
-    <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
-    <PackageIconUrl>ICON URL</PackageIconUrl>
-    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, FlexibleList</PackageTags>
+    <PackageLicenseUrl>https://github.com/AhmetCavus/Cinary.ReactiveList/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/AhmetCavus/Cinary.ReactiveList</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AhmetCavus/Cinary.ReactiveList.git</RepositoryUrl>
+    <PackageReleaseNotes>This is in a early alpha phase. So feel free to test it and make improvements</PackageReleaseNotes>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, ReactiveList, listview</PackageTags>
     
     <Title>FlexibleList Plugin for Xamarin and Windows</Title>
     <Summary>Summary of nuget</Summary>
-    <Description>Plugin Description</Description>
+    <Description>This project contains an extension of the Xamarin.form ListView by scroll events</Description>
 
     <Owners>YOU</Owners>
-    <Authors>YOU</Authors>
+    <Authors>Ahmet Cavus</Authors>
     <Copyright>Copyright 2018</Copyright>
+    <Company>Cinary</Company>
+    <RepositoryType>Git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
