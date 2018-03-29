@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReactiveList.Test.Views.MainPage"
+             xmlns:reactive="clr-namespace:Cinary.Xamarin.Reactive;assembly=Cinary.ReactiveList"
+             Title="{Binding Title}"
+             x:Name="Root">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
+        <Label Text="Welcome to the ReactiveList demo!" FontSize="Large" FontAttributes="Bold" TextColor="BurlyWood" />
+        <reactive:ReactiveList
+            Margin="0, 11, 0, 0"
+            IsListenerActive="{Binding IsListenerActive}"
+    		HorizontalOptions="FillAndExpand"
+    		VerticalOptions="FillAndExpand"
+    		ColumnCount="2"
+    		HasUnevenRows="true"
+            Paging="30"
+            RowHeight="151"
+    		ScrollListener="{Binding BindingContext, Source={x:Reference Root}}"
+    		StackList="{Binding Locations}">
+            <reactive:ReactiveList.ColumnTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Country}" FontSize="Large" FontAttributes="Bold" />
+                        <Label Text="{Binding City}" FontSize="Medium" />
+                        <Label Text="{Binding Desc}" FontSize="Default" />
+                    </StackLayout>
+                </DataTemplate>
+            </reactive:ReactiveList.ColumnTemplate>
+        </reactive:ReactiveList>
+    </StackLayout>
+</ContentPage>

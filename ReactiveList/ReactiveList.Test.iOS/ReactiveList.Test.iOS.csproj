@@ -193,6 +193,10 @@
     <PackageReference Include="Prism.Unity.Forms" Version="7.0.0.396" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ReactiveList.Lib\ReactiveList\ReactiveList.csproj">
+      <Project>{ab0ed03e-6a79-4d6a-bc7d-ec09763ec9ad}</Project>
+      <Name>ReactiveList</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ReactiveList.Test\ReactiveList.Test.csproj">
       <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
       <Name>ReactiveList.Test</Name>
